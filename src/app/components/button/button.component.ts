@@ -20,7 +20,7 @@ export class ButtonComponent implements OnInit {
   }
 
   onClick() {
-    console.log(Object)
+    console.log('Add')
   }
 
 }
