@@ -1,5 +1,6 @@
+import { TASKS } from './../mosk.tasks';
 import { Injectable } from '@angular/core';
-import { TASKS } from '../mosk.tasks';
+import { Observable, of } from 'rxjs';
 import { Task } from '../Task';
 
 @Injectable({
@@ -9,7 +10,8 @@ export class TaskService {
 
   constructor() { }
 
-  getTask(): Task[] {
-    return TASKS
+  getTask(): Observable<Task[]> {
+    const tasks = of(TASKS)
+    return tasks;
   }
 }
