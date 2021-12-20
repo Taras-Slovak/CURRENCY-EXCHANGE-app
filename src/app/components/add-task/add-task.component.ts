@@ -9,7 +9,7 @@ export class AddTaskComponent implements OnInit {
 
   text: string;
   day: string;
-  remainder: boolean = false;
+  reminder: boolean = false;
 
   constructor() { }
 
