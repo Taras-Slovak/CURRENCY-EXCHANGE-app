@@ -1,6 +1,6 @@
 import { TASKS } from './../mosk.tasks';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Task } from '../Task';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 
