@@ -1,19 +1,18 @@
-import { TASKS } from './../../mosk.tasks';
-import { Task } from 'src/app/Task';
+import { TaskService } from './../../services/task.service';
+import { Task } from '../../Task';
 import { Component, OnInit } from '@angular/core';
-
-
 @Component({
   selector: 'app-task',
   templateUrl: './task.component.html',
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent implements OnInit {
-  tasks: Task[] = TASKS;
+  tasks: Task[] = [];
 
-  constructor() { }
+  constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
+    this.tasks = this.taskService.getTask();
   }
 
 }
