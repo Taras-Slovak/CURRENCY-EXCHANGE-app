@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Task } from './../../Task';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-add-task',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-task.component.scss']
 })
 export class AddTaskComponent implements OnInit {
+  @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
   text: string;
   day: string;
@@ -27,6 +29,8 @@ export class AddTaskComponent implements OnInit {
       day: this.day,
       reminder: this.reminder
     }
+
+    this.onAddTask.emit(newTask);
 
     //@todo - emit event
 
