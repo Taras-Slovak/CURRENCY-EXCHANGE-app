@@ -1,4 +1,3 @@
-import { TASKS } from './../mosk.tasks';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Task } from '../Task';
