@@ -12,7 +12,7 @@ import { PageComponent } from './components/page/page.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonModule } from '@angular/material/button';
-import { MenuComponent } from './components/menu/menu.component';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 
@@ -62,7 +62,7 @@ import { MatTreeModule } from '@angular/material/tree';
     DatepickerComponent,
     ChartsComponent,
     PageComponent,
-    MenuComponent
+
 
   ],
   imports: [
