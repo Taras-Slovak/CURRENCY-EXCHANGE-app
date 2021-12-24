@@ -1,0 +1,13 @@
+.datepiker {
+  display: flex;
+  align-items: center;
+  &__item {
+    height: 60px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  &__txt {
+    margin-right: 10px;
+  }
+}

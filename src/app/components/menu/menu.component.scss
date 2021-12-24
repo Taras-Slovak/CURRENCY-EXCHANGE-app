@@ -1,0 +1,15 @@
+.menu {
+  width: max-content;
+  height: auto;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  &__text {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px;
+  }
+}
