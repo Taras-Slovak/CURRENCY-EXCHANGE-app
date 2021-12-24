@@ -9,6 +9,7 @@ import { ChartsComponent } from './components/charts/charts.component';
 import { NgChartsModule } from 'ng2-charts';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonModule } from '@angular/material/button';
+import { PageComponent } from './components/page/page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
     ParametersComponent,
     ButtonsComponent,
     DatepickerComponent,
-    ChartsComponent
+    ChartsComponent,
+    PageComponent
 
   ],
   imports: [
