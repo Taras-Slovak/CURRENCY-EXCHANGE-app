@@ -1,1 +1,11 @@
-<p>select works!</p>
+<div class="select">
+  <span class="select__txt">Currency</span>
+  <mat-form-field appearance="fill">
+    <mat-label>Choice</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{ food.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
