@@ -5,12 +5,14 @@ import { ParametersComponent } from './components/parameters/parameters.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { ButtonsComponent } from './components/buttons/buttons.component';
+import { DatepickerComponent } from './components/datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParametersComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    DatepickerComponent
 
   ],
   imports: [
