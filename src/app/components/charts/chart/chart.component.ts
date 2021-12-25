@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Chart, registerables } from 'chart.js';
 
+
 @Component({
   selector: 'app-chart',
   templateUrl: './chart.component.html',
@@ -11,10 +12,8 @@ export class ChartComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
-
-
-
     const labels: any = [
       'January',
       'February',
@@ -40,7 +39,5 @@ export class ChartComponent implements OnInit {
 
     const myChart = new Chart('myChart', config);
   }
-
-
 
 }

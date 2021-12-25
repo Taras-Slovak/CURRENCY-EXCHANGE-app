@@ -1,4 +1,18 @@
 <div class="buttons">
-  <button class="buttons__btn" mat-raised-button color="primary">Table</button>
-  <button class="buttons__btn" mat-raised-button color="primary">Chart</button>
+  <button
+    (click)="onClick()"
+    class="buttons__btn"
+    mat-raised-button
+    color="primary"
+  >
+    {{ table }}
+  </button>
+  <button
+    (click)="onClick()"
+    class="buttons__btn"
+    mat-raised-button
+    color="primary"
+  >
+    {{ chart }}
+  </button>
 </div>
