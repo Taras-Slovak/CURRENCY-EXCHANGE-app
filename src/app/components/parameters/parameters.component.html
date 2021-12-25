@@ -1,5 +1,10 @@
 <div class="parameters">
   <app-select></app-select>
   <app-datepicker></app-datepicker>
-  <app-buttons></app-buttons>
+  <app-buttons
+    (btnClick)="btnTable()"
+    color="#1a00ff"
+    text="Table"
+  ></app-buttons>
+  <app-buttons (btnClick)="btnChart()" color="red" text="Chart"></app-buttons>
 </div>

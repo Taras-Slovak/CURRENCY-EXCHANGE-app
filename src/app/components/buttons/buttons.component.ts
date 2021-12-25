@@ -1,4 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+
+
+
 
 @Component({
   selector: 'app-buttons',
@@ -7,10 +10,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  @Input() table: string = "Table";
-  @Input() chart: string = "Chart";
+  @Input() text: string;
+  @Input() color: string;
 
-
+  @Output() btnClick = new EventEmitter();
 
   constructor() { }
 
@@ -18,7 +21,8 @@ export class ButtonsComponent implements OnInit {
   }
 
   onClick() {
-    console.log('test')
+    this.btnClick.emit();
+
   }
 
 }

@@ -1,18 +1,10 @@
 <div class="buttons">
   <button
     (click)="onClick()"
+    [ngStyle]="{ 'background-color': color }"
     class="buttons__btn"
     mat-raised-button
-    color="primary"
   >
-    {{ table }}
-  </button>
-  <button
-    (click)="onClick()"
-    class="buttons__btn"
-    mat-raised-button
-    color="primary"
-  >
-    {{ chart }}
+    {{ text }}
   </button>
 </div>

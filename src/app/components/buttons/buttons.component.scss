@@ -1,5 +1,8 @@
 .buttons {
   &__btn {
     margin-left: 15px;
+    &:first-child {
+      color: rgb(250, 250, 250);
+    }
   }
 }

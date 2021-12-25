@@ -10,6 +10,14 @@ export class ParametersComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
+  btnTable() {
+    console.log("TABLE!!!!!!!!")
+  }
+
+  btnChart() {
+    console.log("CHART!!!!!!!!!S")
+  }
 }
