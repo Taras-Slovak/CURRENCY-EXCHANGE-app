@@ -25,11 +25,18 @@ export class ChartComponent implements OnInit {
     const data: any = {
       labels: labels,
       datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45],
-      }]
+        label: 'USD',
+        backgroundColor: 'blue',
+        borderColor: 'blue',
+        data: [0, 5, 2, 4, 7, 12, 20],
+      },
+      {
+        label: 'EUR',
+        backgroundColor: 'gree',
+        borderColor: 'green',
+        data: [0, 2, 4, 6, 8, 10, 12],
+      },
+      ]
     };
     const config: any = {
       type: 'line',

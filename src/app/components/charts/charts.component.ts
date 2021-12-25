@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { Currency } from 'src/app/data/Currency';
+import { CURRENCY } from 'src/app/data/moak-currency';
 
 @Component({
   selector: 'app-charts',
@@ -11,5 +13,7 @@ export class ChartsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  currencies: any = CURRENCY;
 
 }

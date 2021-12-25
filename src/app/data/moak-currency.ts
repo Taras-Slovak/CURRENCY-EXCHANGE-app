@@ -1,5 +1,5 @@
-import { Currancy } from "./Currency"
-export const CURRENCY: Currancy[] = [
+// import { Currency } from "./Currency"
+export const CURRENCY: any = [
 
     {
         "date": "25.12.2021",

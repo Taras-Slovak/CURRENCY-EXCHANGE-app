@@ -12,7 +12,7 @@ interface Food {
 export class SelectComponent implements OnInit {
 
   foods: Food[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
+    { value: 'steak-0', viewValue: 'Stweak' },
     { value: 'pizza-1', viewValue: 'Pizza' },
 
   ];
