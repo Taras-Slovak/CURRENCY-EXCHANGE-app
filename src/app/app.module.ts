@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+
+import { HttpClientModule } from '@angular/common/http';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ParametersComponent } from './components/parameters/parameters.component';
@@ -117,7 +120,7 @@ import { ChartComponent } from './components/charts/chart/chart.component';
     MatTooltipModule,
     MatTreeModule,
     // ????
-
+    HttpClientModule
 
   ],
   providers: [],
