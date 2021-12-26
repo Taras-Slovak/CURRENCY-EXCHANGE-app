@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Currency } from 'src/app/data/Currency';
-import { CURRENCY } from 'src/app/data/moak-currency';
 @Injectable({
   providedIn: 'root'
 })
