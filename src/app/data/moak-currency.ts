@@ -1,5 +1,5 @@
-// import { Currency } from "./Currency"
-export const CURRENCY: any = [
+import { Currency } from "./Currency"
+export const CURRENCY: Currency[] = [
     {
         "r030": 36,
         "txt": "Австралійський долар",

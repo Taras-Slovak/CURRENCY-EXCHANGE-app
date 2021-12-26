@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { Currency } from 'src/app/data/Currency';
-import { CURRENCY } from 'src/app/data/moak-currency';
+import { Currency } from 'src/app/data/Currency';
+import { CurrencyService } from 'src/app/services/currency.service';
+
 
 @Component({
   selector: 'app-charts',
@@ -8,12 +9,13 @@ import { CURRENCY } from 'src/app/data/moak-currency';
   styleUrls: ['./charts.component.scss']
 })
 export class ChartsComponent implements OnInit {
+  currencies: Currency[] = [];
 
-  constructor() { }
+  constructor(private currencyService: CurrencyService) { }
 
   ngOnInit(): void {
+    this.currencyService.getCurrency().subscribe((currencies => {
+      this.currencies = currencies;
+    }));
   }
-
-  currencies: any = CURRENCY;
-
 }
