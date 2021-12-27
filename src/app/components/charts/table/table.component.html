@@ -1,1 +1,26 @@
-<p>table works!</p>
+<!-- <p *ngFor="let a of currencies">{{ a.cc }}</p> -->
+
+<table>
+  <thead>
+    <tr class="table-headers">
+      <th>Currency</th>
+      <th>Rate</th>
+      <th>Market rate</th>
+      <th>Weight</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of currencies">
+      <td>{{ a.txt }}</td>
+      <th class="mobile-header"></th>
+      <td>{{ a.rate }}</td>
+      <th class="mobile-header">Market rate</th>
+      <td>€12.35</td>
+      <th class="mobile-header">Weight</th>
+      <td>5%</td>
+      <th class="mobile-header">Value</th>
+      <td>€1,536.96</td>
+    </tr>
+  </tbody>
+</table>

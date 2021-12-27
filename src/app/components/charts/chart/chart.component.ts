@@ -21,6 +21,7 @@ export class ChartComponent implements OnInit {
       'April',
       'May',
       'June',
+
     ];
     const data: any = {
       labels: labels,
@@ -28,7 +29,7 @@ export class ChartComponent implements OnInit {
         label: 'USD',
         backgroundColor: 'blue',
         borderColor: 'blue',
-        data: [0, 5, 2, 4, 7, 12, 20],
+        data: [0, 3],
       },
       {
         label: 'EUR',
