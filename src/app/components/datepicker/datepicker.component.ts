@@ -13,4 +13,8 @@ export class DatepickerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  dataChange($event: any) {
+    console.log($event.value);
+  }
+
 }
