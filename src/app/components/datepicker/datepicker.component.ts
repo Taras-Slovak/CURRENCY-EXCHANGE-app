@@ -14,7 +14,10 @@ export class DatepickerComponent implements OnInit {
   }
 
   dataChange($event: any) {
-    console.log($event.value);
+    const date = new Date($event.value);
+    let finalDate = date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear()
+
+    console.log(finalDate);
   }
 
 }
