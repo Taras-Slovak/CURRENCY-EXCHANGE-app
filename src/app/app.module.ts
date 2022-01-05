@@ -12,6 +12,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { PageComponent } from './components/page/page.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { MatInputModule } from '@angular/material/input';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
 
 const appRoutes: Routes = [
   { path: '', component: TaskComponent },
@@ -26,7 +32,8 @@ const appRoutes: Routes = [
     TaskItemComponent,
     AddTaskComponent,
     PageComponent,
-    FooterComponent
+    FooterComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,9 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule, RouterModule.forRoot(appRoutes, {
       enableTracing: true
-    }),
+    }), BrowserAnimationsModule,
+    MatInputModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
