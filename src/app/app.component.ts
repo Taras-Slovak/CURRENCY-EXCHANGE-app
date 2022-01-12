@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'autocomplete';
+
+  constructor() { }
+
+  hide: boolean = true;
+  func() {
+    if (this.hide === false) {
+      this.hide = true;
+    } else {
+      this.hide = false;
+    }
+  }
 }
