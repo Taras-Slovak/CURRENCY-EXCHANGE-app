@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngxs/store';
-import { AddAnimal } from '../store/animal.actions';
+import { Select, Store } from '@ngxs/store';
+import { Observable } from 'rxjs';
+import { GetAnimal } from '../store/animal.actions';
+import { ZooState } from '../store/animal.state';
+import { AnimalGetInterface } from '../model/AnimalGet.model';
 
 @Component({
   selector: 'app-zoo',
@@ -8,15 +11,19 @@ import { AddAnimal } from '../store/animal.actions';
   styleUrls: ['./zoo.component.scss']
 })
 export class ZooComponent implements OnInit {
-  // inputTest: string = "";
+
   constructor(private store: Store) { }
 
   ngOnInit(): void {
+    this.getAnimal();
   }
-
-  addAnimal(name: string) {
-    // this.inputTest = name;
-    this.store.dispatch(new AddAnimal(name));
+  getAnimalArray: AnimalGetInterface[] = [];
+  @Select(ZooState.getAnimalSelector) getAnimalOb$: Observable<AnimalGetInterface[]> | undefined;
+  getAnimal() {
+    this.store.dispatch(new GetAnimal());
+    this.getAnimalOb$?.subscribe((res: any) => {
+      console.log(res)
+    })
   }
 
 }

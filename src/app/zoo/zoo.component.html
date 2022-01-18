@@ -1,2 +1,6 @@
-<input type="text" #input /> <br />
-<button type="button" (click)="addAnimal(input.value)">Click</button>
+<ul *ngFor="let arr of getAnimalArray">
+  <li>{{ arr.id }}</li>
+  <li>{{ arr.userId }}</li>
+  <li>{{ arr.title }}</li>
+  <li>{{ arr.body }}</li>
+</ul>
