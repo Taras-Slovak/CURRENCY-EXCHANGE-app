@@ -22,7 +22,7 @@ export class ZooComponent implements OnInit {
   getAnimal() {
     this.store.dispatch(new GetAnimal());
     this.getAnimalOb$?.subscribe((res: any) => {
-      console.log(res)
+      this.getAnimalArray = res;
     })
   }
 
